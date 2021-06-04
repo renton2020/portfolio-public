@@ -1,0 +1,22 @@
+.p-mv {
+    background-color: $color-home-mv-bg;
+    // padding-top: 80px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__text {
+        color: $color-home-mv-text;
+        line-height: 2.25;
+        letter-spacing: 0.13em;
+
+        &-outer {
+            // margin-top: 40px;
+            width: per(330px, 375px);
+            margin-bottom: 40px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/* ========================================================
+トップに戻るボタン
+=========================================================*/
+
+/*リンクの形状*/
+#page-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: #942D2F;
+    // border-radius: 5px;
+    // width: 60px;
+    // height: 60px;
+    // color: #fff;
+    text-align: center;
+
+    // display: inline-block;
+    font-size: rem(16px);
+    line-height: 1;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    // padding-right: 25px;
+    transition: all 0.3s;
+
+    @include responsive(md) {
+        font-size: rem(20px);
+        // margin-top: 0;
+        // margin-bottom: 0px;
+        // padding-right: 0px;
+
+    }
+}
+
+#page-top a:hover {
+    opacity: 0.6;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/*上に上がる動き*/
+
+#page-top.js-UpMove {
+    animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*下に下がる動き*/
+
+#page-top.js-DownMove {
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+/*検証のためのCSS*/
+// section {
+//     padding: 500px 0;
+// }
+
+
+/* ========================================================
+トップに戻るボタンここまで
+=========================================================*/

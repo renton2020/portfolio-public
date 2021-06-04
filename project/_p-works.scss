@@ -1,0 +1,27 @@
+/* worksの背景 */
+.p-works {
+    background-color: $color-section-bg;
+    border-radius: 5px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 178px;
+
+    &__heading-position {
+        transform: translateY(-50.15%);
+    }
+
+    &__sub-heading-position {
+        margin-bottom: 50px;
+    }
+
+    &__link-mb {
+        padding-bottom: 120px;
+    }
+
+
+    @include responsive(md) {
+        max-width: 81.94%;
+        ;
+    }
+}

@@ -1,0 +1,55 @@
+.c-detail-commentary {
+    max-width: 740px;
+    margin-bottom: 90px;
+
+    &__heading {
+        padding-bottom: 40px;
+
+        &-sub {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__text {
+        max-width: 678px;
+
+        &-pb {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__persona-p {
+        margin-top: 20px;
+    }
+
+    &__persona-a {
+        text-decoration: underline;
+    }
+
+
+    &__img {
+        width: 100%;
+
+        &-persona {
+            width: 170px;
+            height: 220px;
+        }
+
+        &-mb {
+            margin-bottom: 20px;
+        }
+
+        &-outer {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__color {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

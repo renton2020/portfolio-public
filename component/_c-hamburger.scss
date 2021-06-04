@@ -1,0 +1,175 @@
+.c-hamburger {
+    @include responsive(lg) {
+        display: none;
+    }
+
+    /* アイコン */
+    &__icon {
+        @include flex(around, center);
+    }
+
+    &__img {
+        color: $color-heading-text;
+        width: 60px;
+        height: 60px;
+        margin-top: 50px;
+        margin-right: 10px;
+        // margin-right: 25px;
+        // margin-left: 25px;    
+    }
+
+}
+
+/*アクティブになったエリア*/
+.c-hamburger-menu.panelactive {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/*丸の拡大*/
+.c-hamburger-menu__circle-bg {
+    position: fixed;
+    z-index: 3;
+    /*丸の形*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: $color-body-bg;
+    /*丸のスタート位置と形状*/
+    transform: scale(0);
+    /*scaleをはじめは0に*/
+    right: -50px;
+    top: -50px;
+    animation-delay: .2s;
+    transition: all 0.8s;
+    /*0.6秒かけてアニメーション*/
+}
+
+.c-hamburger-menu__circle-bg.circleactive {
+    animation-delay: .2s;
+    transition: all 0.8s;
+    transform: scale(50);
+    /*クラスが付与されたらscaleを拡大*/
+}
+
+/*ナビゲーションの縦スクロール*/
+.c-hamburger-menu__list {
+    display: none;
+    /*はじめは表示なし*/
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.c-hamburger-menu.panelactive .c-hamburger-menu__list {
+    display: block;
+    /*クラスが付与されたら出現*/
+}
+
+/*ナビゲーション*/
+.c-hamburger-menu ul {
+    opacity: 0;
+    /*はじめは透過0*/
+    /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+.c-hamburger-menu.panelactive ul {
+    opacity: 1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+.c-hamburger-menu.panelactive ul li {
+    animation-name: navianime;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    /*0.2 秒遅らせて出現*/
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes navianime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*リストのレイアウト設定*/
+.c-hamburger-menu__list li {
+    text-align: center;
+    list-style: none;
+}
+
+.c-hamburger-menu__list-a {
+    color: $color-heading-text;
+    font-size: rem(40px);
+    padding: 15px;
+    display: block;
+    margin-right: 10px;
+    letter-spacing: 0.1em;
+}
+
+
+/*========= ボタンのためのCSS ===============*/
+.c-hamburger-btn {
+    position: fixed;
+    top: 16px;
+    right: 10px;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    cursor: pointer;
+    width: 68px;
+    height: 80px;
+}
+
+/*×に変化*/
+.c-hamburger-btn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 17px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $color-hamburger-btn;
+    width: 50%;
+}
+
+.c-hamburger-btn span:nth-of-type(1) {
+    top: 20px;
+}
+
+.c-hamburger-btn span:nth-of-type(2) {
+    top: 40px;
+}
+
+.c-hamburger-btn.active span:nth-of-type(1) {
+    top: 20px;
+    left: 17px;
+    transform: translateY(10px) rotate(-45deg);
+    width: 50%;
+}
+
+.c-hamburger-btn.active span:nth-of-type(2) {
+    top: 40px;
+    left: 17px;
+    transform: translateY(-10px) rotate(45deg);
+    width: 50%;
+}

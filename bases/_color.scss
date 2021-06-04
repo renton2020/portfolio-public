@@ -1,0 +1,52 @@
+//  ========================================================
+// 色管理
+// =========================================================
+$palette-base: #F1EBD9;
+$palette-main: #95C4CB;
+$palette-accent:#96BA54;
+$palette-sub1:#F8F8F8;
+$palette-sub2:#8D8D8D;
+$palette-text:#4D4B3A;
+$palette-text2: #A2A094;
+$palette-text3:#FFF;
+
+$color-body-bg: $palette-base;
+$color-header-bg: $palette-main;
+$color-hamburger-btn: $palette-text;
+$color-home-mv-bg: $palette-main;
+$color-footer-bg: $palette-main;
+$color-section-bg: $palette-sub1;
+$color-button-bg: $palette-main;
+$color-button-text-hover: $palette-text3;
+$color-body-text: $palette-text;
+$color-heading-text: $palette-accent;
+$color-heading-subtext: $palette-sub2;
+$color-works-heading-text: $palette-text;
+$color-works-title-hover: $palette-accent;
+$color-home-mv-text:$palette-text3;
+$color-header-footer-text:$palette-text3;
+$color-h-f-text-hover:$palette-base;
+$color-link-text:$palette-text3;
+$color-icon-bg:$palette-main;
+
+// ========================================================
+// 色管理ここまで
+// =========================================================
+
+// ========================================================
+// 文字のリンクカラー
+// 書き方
+// @include link-color(#f00,#00f)
+// =========================================================
+@mixin link-color ($normal, $hover) {
+    color: $normal;
+
+    &:hover {
+        color: $hover;
+        text-decoration: none;
+    }
+}
+
+// ========================================================
+// 文字のリンクカラーここまで
+// =========================================================

@@ -1,0 +1,30 @@
+.c-detail-capture {
+    /* レイアウト調整 */
+    width: per(1040px, 1440px);
+    margin-left: auto;
+    margin-right: auto;
+    // @include flex(around, 0, wrap);
+
+    /* レイアウト調整ここまで */
+    &__img {
+        text-align: center;
+    }
+
+    &__img-pc {
+        width: per(275px, 375px);
+
+        // @include responsive(lg) {
+        //     width: 80%;
+        // }    }
+
+        /* SP 保留 */
+        // &__img-sp {
+        //     // width: per(187.5px, 375px);
+
+        //     @include responsive(lg) {
+        //         width: 100%;
+        //     }
+
+        // }
+    }
+}

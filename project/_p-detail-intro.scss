@@ -1,0 +1,62 @@
+.p-detail-intro {
+    background-color: $color-section-bg;
+    width: per(330px, 375px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: per(60px, 790px);
+    padding-right: per(60px, 790px);
+    padding-bottom: 60px;
+
+    @include responsive(xl) {
+        width: 85%;
+    }
+
+    &__button {
+        transform: translateY(-50%);
+    }
+
+    &__caption {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__table {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include responsive(xl) {
+            width: per(652px, 790px);
+        }
+    }
+
+    &__tr {
+        border-top: dashed 2px rgb(206, 206, 206);
+        border-bottom: dashed 2px rgb(206, 206, 206);
+    }
+
+    &__th {
+        min-width: 10em;
+
+
+        vertical-align: middle;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        // font-size: 12px;
+        // @include responsive(lg) {
+        //     font-size: rem(16px);
+        // }
+    }
+
+    &__td {
+        vertical-align: middle;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+
+    &__no-link {
+        padding-top: 60px;
+    }
+}

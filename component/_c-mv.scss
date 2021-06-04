@@ -1,0 +1,49 @@
+.c-mv {
+    max-width: per(1040px, 1440px);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    @include responsive(md) {
+        padding-top: 75px;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 260px;
+        margin-bottom: 40px;
+
+        @include responsive(md) {
+            width: 313px;
+
+        }
+
+    }
+
+    &__heading {
+        font-size: 55px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        color: $color-header-footer-text;
+
+        @include responsive(md) {
+            font-size: 80px;
+        }
+    }
+
+    // &::before {
+    //     content: '';
+    //     max-width: 1040px;
+    //     height: 6px;
+    //     background-color: $color-header-footer-text;
+    // }
+
+    // &::after {
+    //     content: '';
+    //     max-width: 1040px;
+    //     height: 6px;
+    //     background-color: $color-header-footer-text;
+    // }
+}

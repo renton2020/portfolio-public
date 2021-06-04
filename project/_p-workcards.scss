@@ -1,0 +1,19 @@
+.p-workcards {
+    width: 92.14%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    @include flex(around, 0, wrap);
+
+    &__card {
+        margin-bottom: 50px;
+        // @include responsive(lg) {
+        //     margin-right: 70px;
+
+        //     &:nth-of-type(3n) {
+        //         margin-right: 0;
+        //     }
+        // }
+    }
+
+}

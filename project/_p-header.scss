@@ -1,0 +1,18 @@
+.p-header {
+    @include responsive(lg) {
+        @include flex(between, center);
+    }
+
+
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__logolink {
+        &:hover {
+            opacity: 0.6;
+            transition: all 0.4s;
+        }
+    }
+}

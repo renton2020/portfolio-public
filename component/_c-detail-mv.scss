@@ -1,0 +1,27 @@
+.c-detail-mv {
+    width: 100%;
+    text-align: center;
+    // position: relative;
+
+    &-img {
+        width: 89.33%;
+
+        @include responsive(md) {
+            width: 81.94%;
+        }
+    }
+
+    // &__sp {
+    //     position: absolute;
+    //     right: 0%;
+    //     bottom: 0%;
+
+    // &-img {
+    //     display: none;
+
+    //     @include responsive(md) {
+    //         display: block;
+    //         width: 21.04%;
+    //     }
+    // }
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/common/common_img06_favicon.svg">
+    <title>works-candle</title>
+    <!-- quicksandフォント -->
+    <link rel="stylesheet" href="https://use.typekit.net/clv8fvy.css">
+    <!-- quicksandフォントここまで -->
+    <!-- googleアイコン -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- googleアイコンここまで -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- 筑紫A丸ゴシック -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'tox0gjx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- 筑紫A丸ゴシックここまで -->
+</head>
+
+<body>
+    <!--========================================================
+    ヘッダー
+    =========================================================-->
+    <header id="header" class="l-header ">
+        <div class="l-header__inner p-header">
+            <div>
+                <h1>
+                    <a href="index.html" class="p-header__logolink">
+                        <img src="img/common/common_img01_icon_top.svg" alt="ロゴ" class="p-header__logo" />
+                    </a>
+                </h1>
+            </div>
+            <!-- メニュー -->
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                    <li class="c-nav__item"><a href="index.html#works" class="c-nav__link">Works</a></li>
+                    <li class="c-nav__item"><a href="about.html" class="c-nav__link">About</a></li>
+                    <li class="c-nav__item"><a href="#contact" class="c-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- メニューここまで -->
+            <!-- ハンバーガーメニュー -->
+            <div class="c-hamburger">
+                <div class="c-hamburger-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="c-hamburger-menu">
+                    <div class="c-hamburger-menu__list">
+                        <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href="index.html" class="c-hamburger-menu__list-a">Home</a></li>
+                            <li><a href="index.html#works" class="c-hamburger-menu__list-a">Works</a></li>
+                            <li><a href="about.html" class="c-hamburger-menu__list-a">About</a></li>
+                            <li>
+                                <a href="#contact" class="c-hamburger-menu__list-a">Contact</a>
+                            </li>
+                            <li class="c-hamburger__icon">
+                                <a href="https://twitter.com/renton_design">
+                                    <img src="img/common/common_img04_icon_twitter-blue.svg" alt="ツイッターリンク"
+                                        class="c-hamburger__img">
+                                </a>
+                                <a href="https://renton-blog.com/">
+                                    <img src="img/common/common_img05_icon_wordpress2.svg" alt="ブログリンク"
+                                        class="c-hamburger__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="c-hamburger-menu__circle-bg"></div>
+            </div>
+
+            <!-- <div class="c-hamburger">
+                <span class="c-hamburger-span"></span>
+                <span class="c-hamburger-span"></span>
+            </div> -->
+            <!-- ハンバーガーメニューここまで -->
+        </div>
+    </header>
+    <!--========================================================
+    ヘッダーここまで
+    =========================================================-->
+
+    <!--========================================================
+    メイン
+    =========================================================-->
+    <main class="l-main">
+        <div class="l-main__upper"></div>
+        <!--========================================================
+        MV
+        =========================================================-->
+        <div class="p-detail-mv">
+            <h2 class="h2-detail-title">ポートフォリオサイト</h2>
+            <div class="c-detail-mv">
+                <div>
+                    <img src="img/works/works-portfolio_img01_mv.png" srcset="img/works/works-portfolio_img01_mv.png 1x,
+                    img/works/works-portfolio_img01_mv@2x.png 2x" alt="サイトイメージ" class="c-detail-mv-img">
+                </div>
+            </div>
+        </div>
+        <!--========================================================
+        MVここまで
+        =========================================================-->
+
+        <!--========================================================
+        解説
+        =========================================================-->
+        <section class="p-detail-intro l-main__mb-common p-detail-intro__no-link">
+            <!-- <div class="c-button p-detail-intro__button">
+                <a href="#" class="c-button__inner">Link</a>
+            </div> -->
+
+            <p class="p-detail-intro__caption">
+                自身のポートフォリオサイト（このサイト）<br>
+                安心感のある雰囲気を意識して制作しました。
+            </p>
+            <table class="p-detail-intro__table">
+                <tr class="p-detail-intro__tr">
+                    <th class="p-detail-intro__th">担当範囲</th>
+                    <td class="p-detail-intro__td">デザイン、コーディング</td>
+                </tr>
+                <tr class="p-detail-intro__tr">
+                    <th class="p-detail-intro__th">デザインツール</th>
+                    <td class="p-detail-intro__td">XD(カンプ) / Illustrator(ロゴ)</td>
+                </tr>
+                <tr class="p-detail-intro__tr">
+                    <th class="p-detail-intro__th">言語</th>
+                    <td class="p-detail-intro__td">HTML / CSS(SCSS) / jQuery</td>
+                </tr>
+                <tr class="p-detail-intro__tr">
+                    <th class="p-detail-intro__th">レスポンシブ</th>
+                    <td class="p-detail-intro__td">スマートフォン / タブレット / PC</td>
+                </tr>
+                <tr class="p-detail-intro__tr">
+                    <th class="p-detail-intro__th">制作期間</th>
+                    <td class="p-detail-intro__td">約1ヶ月</td>
+                </tr>
+            </table>
+        </section>
+        <!--========================================================
+        概要ここまで
+        =========================================================-->
+
+
+        <!--========================================================
+        解説
+        =========================================================-->
+
+        <article class="p-detail-commentary l-main__mb-common">
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">ターゲット</h3>
+                <p>採用担当者・クライアント</p>
+            </section>
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">ゴール</h3>
+                <h4 class="h4-detail-heading-sub c-detail-commentary__heading-sub">制作面</h4>
+                <p class="c-detail-commentary__text c-detail-commentary__text-pb">
+                    自分の出来ることを知ってもらう<br>
+                    可能な限り思考過程を伝える
+                </p>
+                <h4 class="h4-detail-heading-sub c-detail-commentary__heading-sub">スキル面</h4>
+                <p class="c-detail-commentary__text">
+                    デザイン：XDの各種機能（コンポーネント・スタック・リピートグリッド）を用いて制作する。<br>
+                    ロゴとスキルアイコンを関連したデザインで作成する。安心感のある雰囲気をデザインする。<br>
+                    コーディング：FLOCSSによりコンポーネント単位で実装する。<br>ロゴにSVGアニメーションを実装する。
+                </p>
+            </section>
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">配色</h3>
+                <div>
+                    <a href="" class="c-modal__a">
+                        <img src="img/works/works-portfolio_img02_color.png" alt="配色説明画像"
+                            class="c-detail-commentary__img c-detail-commentary__img-mb">
+                    </a>
+                    <a href="" class="c-modal__a">
+                        <img src="img/works/works-portfolio_img03_color.png" alt="配色説明画像"
+                            class="c-detail-commentary__img c-detail-commentary__img-mb">
+                    </a>
+                </div>
+                <p class="c-detail-commentary__text">
+                    安心感のある雰囲気にするため、柔らかい色で、かつ好きな北欧の配色を選択しました。
+                </p>
+            </section>
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">素材</h3>
+                <p class="c-detail-commentary__text c-detail-commentary__text-pb">
+                    スマートフォンのモックアップはリアルなものを使用し、PCから見てもイメージしやすいものとしました。<br>
+                    ロゴはRをモチーフとして、子供の頃好きだった恐竜を取り入れてデザインし、
+                    スキルアイコンはそこから派生させて作成しました。いずれもIllustratorで作成しています。<br>
+                    ペルソナなど、制作時に作成した資料はなるべく掲載するようにしました。
+                </p>
+                <p class="c-detail-commentary__text">
+                    モックアップ：Pixeden「Free iPhone X Psd Mockup Vector」<br>
+                </p>
+            </section>
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">カンプ</h3>
+
+                <p class="c-detail-commentary__text">
+                    MV以外は、作品が目立つようになるべくシンプルなデザインとしました。（実際の作品点数が少ないので、これから増やします…!）<br>
+                    作品解説ページは、出来る限りそれぞれの判断理由を伝えることを意識しました。<br>
+                    フォントは柔らかい印象でありながら汎用性が高いものとして、<a href="https://fonts.adobe.com/fonts/fot-tsukuardgothic-std"
+                        class="c-detail-commentary__persona-a">筑紫A丸ゴシック</a>と<a
+                        href="https://fonts.google.com/specimen/Quicksand"
+                        class="c-detail-commentary__persona-a">Quicksand</a>を選定しました。
+                </p>
+            </section>
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">コーディング</h3>
+
+                <p class="c-detail-commentary__text">
+                    FLOCSSを参考に、コンポーネントベースでファイルを分割して制作しました。<br>
+                    コンポーネントベースによる制作を導入したことで、「今どの部分を作ろうとしているか」という意識が明確になり、作業に取り組みやすくなりました。<br>
+                    コンポーネント部分と余白部分の区別が徹底出来なかったので、制作を重ねてこちらも整理していくことで、作業効率も上がっていくと感じました。<br>
+                    SVGアニメーションは <a href="https://maxwellito.github.io/vivus-instant/"
+                        class="c-detail-commentary__persona-a">vivus-instant</a>というブラウザサービスを使うことで効率良く作成することができました。
+                </p>
+            </section>
+            <section class="c-detail-commentary">
+                <h3 class="h3-detail-heading c-detail-commentary__heading">制作経緯</h3>
+
+                <p class="c-detail-commentary__text">
+                    なるべくシンプルに、かつ思考過程を伝えることを意識して制作しました。<br>
+                    複数ページの制作は初めてでしたが、コンポーネントベースを取り入れたことで、各パーツを再利用しながら制作することが出来ました。
+                </p>
+            </section>
+            <!-- 画像のモーダルウインドウ -->
+            <div class="c-modal">
+                <div class="c-modal__bigimg"><img src="" alt=""></div>
+                <p class="c-modal__close-btn"><a href="" class="c-modal__close-btn-a">✖</a></p>
+            </div>
+            <!-- 画像のモーダルウインドウここまで -->
+        </article>
+        <!--========================================================
+        解説ここまで
+        =========================================================-->
+
+        <!--========================================================
+        キャプチャ
+        =========================================================-->
+        <div class="c-detail-capture">
+            <div class="c-detail-capture__img">
+                <img src="img/works/works-portfolio_img04_capture.png" alt="PCキャプチャ" class="c-detail-capture__img-pc">
+            </div>
+            <!-- SP使用保留 -->
+            <!-- <div>
+                <img src="img/works/works_img07_sampleSP.png" srcset="img/works/works_img07_sampleSP.png 1x,
+                    img/works/works_img07_sampleSP.png 2x" alt="スマホキャプチャ" class="c-detail-capture__img-sp"> -->
+
+            <!-- <img width="375" height="6840" srcset="img/works/works_img07_sampleSP.png 1x,
+                img/works/works_img07_sampleSP.png 2x" src="img/works/works_img07_sampleSP.png" alt="スマホキャプチャ"
+                    class="c-detail-capture__img-sp"> -->
+            <!-- <img src="img/works/works_img07_sampleSP.png" alt="スマホキャプチャ" class="c-detail-capture__img-sp"> -->
+
+            <!-- </div> -->
+        </div>
+        <!--========================================================
+        キャプチャここまで
+        =========================================================-->
+
+    </main>
+    <!--========================================================
+    メインここまで
+    =========================================================-->
+    <!--========================================================
+    フッター
+    =========================================================-->
+    <footer class="l-footer c-topofpage__footercolor">
+        <p id="page-top" class="js-hide-btn"><a href="#"> <span class="material-icons-outlined">arrow_upward</span>
+                Top of page</a></p>
+        <div class="l-footer__upper"></div>
+        <div id="footer" class="l-footer__inner">
+            <!-- フッター前半部分 -->
+            <div class="p-footer-first">
+                <!-- ロゴ -->
+                <div>
+                    <a href="index.html" class="p-footer__logolink">
+                        <img src="img/common/common_img01_icon_top.svg" alt="ロゴ" class="p-footer__logo">
+                    </a>
+                </div>
+                <!-- ロゴここまで -->
+                <!-- メニュー -->
+                <nav class="c-nav">
+                    <ul class="c-nav__list">
+                        <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                        <li class="c-nav__item"><a href="index.html#works" class="c-nav__link">Works</a></li>
+                        <li class="c-nav__item"><a href="about.html" class="c-nav__link">About</a></li>
+                        <li class="c-nav__item"><a href="#contact" class="c-nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- メニューここまで -->
+            </div>
+            <!-- フッター前半部分ここまで -->
+
+            <!-- フッター後半部分 -->
+            <div class="p-footer-second">
+                <div class="p-footer-second__icon">
+                    <a href="https://twitter.com/renton_design" class="p-footer-second__img-outer">
+                        <img src="img/common/common_img02_icon_twitter.svg" alt="ツイッターリンク" class="p-footer-second__img">
+                    </a>
+                    <a href="https://renton-blog.com/" class="p-footer-second__img-outer">
+                        <img src="img/common/common_img03_icon_wordpress.svg" alt="ブログリンク" class="p-footer-second__img">
+                    </a>
+                </div>
+                <a href="#" id="page-top2" class="p-footer-second__back c-nav__link">
+                    <span class="material-icons-outlined">arrow_upward</span>
+                    Top of page</a>
+            </div>
+            <div class="p-footer-third">
+                <p>Copyright &copy; 2021 renton, All rights reserved</p>
+            </div>
+        </div>
+        <!-- フッター後半部分ここまで -->
+
+    </footer>
+    <!--========================================================
+    フッターここまで
+    =========================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.c-workcards {
+    width: 300px;
+    height: 328px;
+    transition: 0.8s;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__link {
+
+        &:focus,
+        :hover {
+            opacity: 0.75;
+            transition: 0.4s;
+            color: $color-works-title-hover;
+            // text-decoration: underline;
+        }
+    }
+}

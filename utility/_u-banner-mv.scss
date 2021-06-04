@@ -1,0 +1,32 @@
+.u-banner-mv {
+    // width: 80vw;
+    // text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include responsive(md) {
+        width: 728px;
+    }
+
+    &__img01 {
+        width: 100%
+    }
+
+    &__img01-outer {
+        margin-bottom: 40px;
+    }
+
+
+    &__flex {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        // height: 100%;
+        gap: 40px;
+        @include flex(between, 0, wrap);
+
+        @include responsive(md) {
+            width: 90%;
+        }
+    }
+}

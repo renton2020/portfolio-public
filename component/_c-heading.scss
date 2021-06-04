@@ -1,0 +1,16 @@
+.c-heading {
+    // padding: 30px 10px;
+    text-align: center;
+
+    &__inner {
+        margin-bottom: -20px;
+    }
+
+    &__subtitle {
+        font-size: rem(20px);
+        color: $color-heading-subtext;
+        letter-spacing: 0.1em;
+        margin-top: -25px;
+    }
+
+}

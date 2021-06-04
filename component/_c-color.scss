@@ -1,0 +1,13 @@
+.c-color {
+    width: per(740px, 1040px);
+    @include flex(0, 0, wrap);
+    padding-left: per(50px, 740px);
+    padding-right: per(50px, 740px);
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    &__palette {
+        width: 60px;
+        height: 60px;
+    }
+}

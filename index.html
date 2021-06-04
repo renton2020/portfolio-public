@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/common/common_img06_favicon.svg">
+    <title>renton's portfolio</title>
+    <!-- quicksandフォント -->
+    <link rel="stylesheet" href="https://use.typekit.net/clv8fvy.css">
+    <!-- quicksandフォントここまで -->
+    <!-- googleアイコン -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- googleアイコンここまで -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- 筑紫A丸ゴシック -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'tox0gjx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- 筑紫A丸ゴシックここまで -->
+</head>
+
+<body>
+    <!--========================================================
+    ヘッダー
+    =========================================================-->
+    <header id="header" class="l-header">
+        <div class="l-header__inner p-header">
+            <div>
+                <h1>
+                    <img src="img/common/common_img01_icon_top.svg" alt="ロゴ" class="p-header__logo" />
+                </h1>
+            </div>
+            <!-- メニュー -->
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                    <li class="c-nav__item"><a href="#works" class="c-nav__link">Works</a></li>
+                    <li class="c-nav__item"><a href="about.html" class="c-nav__link">About</a></li>
+                    <li class="c-nav__item"><a href="#contact" class="c-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- メニューここまで -->
+            <!-- ハンバーガーメニュー -->
+            <div class="c-hamburger">
+                <div class="c-hamburger-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="c-hamburger-menu">
+                    <div class="c-hamburger-menu__list">
+                        <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href="index.html" class="c-hamburger-menu__list-a">Home</a></li>
+                            <li><a href="#works" class="c-hamburger-menu__list-a">Works</a></li>
+                            <li><a href="about.html" class="c-hamburger-menu__list-a">About</a></li>
+                            <li><a href="#contact" class="c-hamburger-menu__list-a">Contact</a></li>
+                            <li class="c-hamburger__icon">
+                                <a href="https://twitter.com/renton_design">
+                                    <img src="img/common/common_img04_icon_twitter-blue.svg" alt="ツイッターリンク"
+                                        class="c-hamburger__img">
+                                </a>
+                                <a href="https://renton-blog.com/">
+                                    <img src="img/common/common_img05_icon_wordpress2.svg" alt="ブログリンク"
+                                        class="c-hamburger__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="c-hamburger-menu__circle-bg"></div>
+            </div>
+
+            <!-- <div class="c-hamburger">
+                <span class="c-hamburger-span"></span>
+                <span class="c-hamburger-span"></span>
+            </div> -->
+            <!-- ハンバーガーメニューここまで -->
+        </div>
+    </header>
+    <!--========================================================
+    ヘッダーここまで
+    =========================================================-->
+
+
+    <!--========================================================
+    メイン
+    =========================================================-->
+    <main class="l-main">
+        <!--========================================================
+        ファーストビュー
+        =========================================================-->
+        <section class="p-mv l-main__mb-home-mv">
+            <div class="c-mv">
+                <img src="img/home/home_img12_title-logo.svg" alt="logo" class="c-mv__img" />
+                <h2 class="c-mv__heading">
+                    Renton's portfolio
+                </h2>
+            </div>
+            <div class="p-mv__text-outer">
+                <p class="p-mv__text">はじめまして。WEBデザイナー・コーダー志望のれんとんと申します。<br>
+                    働きながら独学でWeb制作を学び、転職活動を始めるに至りました。<br>
+                    私のスキルと経験をお役に立てることが出来たら幸いです。</p>
+            </div>
+            <!-- <div class="c-scrolldown"><span class="c-scrolldown__span"></span></div> -->
+        </section>
+        <!--========================================================
+        ファーストビューここまで
+        =========================================================-->
+
+
+        <!--========================================================
+        スキルセット
+        =========================================================-->
+        <section id="skills" class="p-skills">
+            <div class="c-heading p-skills__heading-mb fadeInUpTrigger">
+                <h3 class="h3-heading c-heading__inner">Skills</h3>
+                <p class="c-heading__subtitle">できること</p>
+            </div>
+            <div class="p-skillcard fadeInUpTrigger">
+                <div class="c-skillcard p-skillcard__skill">
+                    <div class="c-skillcard__icon">
+                        <img src="img/home/home_img09_icon_web.svg" alt="イメージアイコン" class="c-skillcard__img">
+                    </div>
+                    <h5 class="h5-name c-skillcard__heading">Webデザイン</h5>
+                    <p>
+                        AdobeXD,Figmaを用いてワイヤーフレーム・デザインカンプを作成できます。<br>
+                        ペルソナ・カスタマージャーニーなどを用いたターゲット分析についても取り組んでいます。<br>
+                        閲覧者の目的を意識した、居心地の良いデザインを心がけています。
+                    </p>
+                </div>
+                <div class="c-skillcard p-skillcard__skill">
+                    <div class="c-skillcard__icon">
+                        <img src="img/home/home_img10_icon_coding.svg" alt="イメージアイコン" class="c-skillcard__img">
+                    </div>
+                    <h5 class="h5-name c-skillcard__heading">コーディング</h5>
+                    <p>
+                        SCSSを用いて、CSS設計の考え方によるクラス命名、コンポーネントベースの実装を実践中です。<br>
+                        jQueryでCSSアニメーションと組み合わせた簡単な動きを実装できます。<br>
+                        保守性の高いコードを目指しています。
+                    </p>
+                </div>
+                <div class="c-skillcard p-skillcard__skill">
+                    <div class="c-skillcard__icon">
+                        <img src="img/home/home_img11_icon_graphic.svg" alt="イメージアイコン" class="c-skillcard__img">
+                    </div>
+                    <h5 class="h5-name c-skillcard__heading">グラフィックデザイン</h5>
+                    <p>
+                        Photoshopを用いた画像加工や、illustratorを用いたロゴ・アイコン・バナー作成ができます。<br>
+                        また、趣味でCLIPSTUDIOによるデジタルイラストを制作しており、ウェルカムボード・フライヤー制作、イベント参加などの経験があります。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+        スキルセットここまで
+        =========================================================-->
+
+
+        <!--========================================================
+        作品紹介
+        =========================================================-->
+        <section class="p-works">
+            <div id="works" class="c-heading p-works__heading-position">
+                <h3 class="h3-heading c-heading__inner">Works</h3>
+                <p class="c-heading__subtitle">つくったもの</p>
+            </div>
+            <!-- web design -->
+            <h4 class="h4-works-heading c-heading p-works__sub-heading-position">Web design</h4>
+            <div class="p-workcards">
+                <a class="c-workcards__link p-workcards__card" href="works-portfolio.html">
+                    <div class="c-workcards">
+                        <img src="img/home/home_img01_mysite.png" srcset="img/home/home_img01_mysite.png 1x,
+                        img/home/home_img01_mysite@2x.png 2x" alt="ポートフォリオサイト" class="c-workcards__img">
+                        <div class="c-workcards__body">
+                            <h5 class="h5-name c-workcards__title">ポートフォリオサイト<br>(このサイト)</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="c-workcards__link p-workcards__card" href="works-candle.html">
+                    <div class="c-workcards">
+                        <img src="img/home/home_img02_candle.png" srcset="img/home/home_img02_candle.png 1x,
+                        img/home/home_img02_candle@2x.png 2x" alt="仮想案件" class="c-workcards__img">
+                        <div class="c-workcards__body">
+                            <h5 class="h5-name c-workcards__title">イベント告知サイト<br>（仮想案件）</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="c-workcards__link p-workcards__card" href="works-blog.html">
+                    <div class="c-workcards">
+                        <img src="img/home/home_img03_blog.png" srcset="img/home/home_img03_blog.png 1x,
+                        img/home/home_img03_blog@2x.png 2x" alt="ブログ" class="c-workcards__img">
+                        <div class="c-workcards__body">
+                            <h5 class="h5-name c-workcards__title">ブログ</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- web designここまで -->
+
+            <!-- graphic design -->
+            <h4 class="h4-works-heading c-heading p-works__sub-heading-position">Graphic design</h4>
+            <div class="p-workcards">
+                <a class="c-workcards__link p-workcards__card" href="works-banner01.html">
+                    <div class="c-workcards">
+                        <img src="img/home/home_img04_banner01.png" srcset="img/home/home_img04_banner01.png 1x,
+                        img/home/home_img04_banner01@2x.png 2x" alt="宅食バナー" class="c-workcards__img">
+                        <div class="c-workcards__body">
+                            <h5 class="h5-name c-workcards__title">宅食バナー<br>(仮想案件)</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="c-workcards__link p-workcards__card" href="works-logo01.html">
+                    <div class="c-workcards">
+                        <img src="img/home/home_img05_logo01.png" srcset="img/home/home_img05_logo01.png 1x,
+                        img/home/home_img05_logo01@2x.png 2x" alt="ロゴ" class="c-workcards__img">
+                        <div class="c-workcards__body">
+                            <h5 class="h5-name c-workcards__title">宅食ロゴ<br>(仮想案件)</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="c-workcards__link p-workcards__card" href="works-twitter-header.html">
+                    <div class="c-workcards">
+                        <img src="img/home/home_img06_twitter.png" srcset="img/home/home_img06_twitter.png 1x,
+                        img/home/home_img06_twitter@2x.png 2x" alt="twitterヘッダー" class="c-workcards__img">
+                        <div class="c-workcards__body">
+                            <h5 class="h5-name c-workcards__title">twitterロゴ</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- graphic designここまで -->
+
+            <!-- Practice -->
+            <h4 class="h4-works-heading c-heading p-worklink__sub-heading">Practice</h4>
+            <div class="p-worklink">
+                <p class="p-worklink__caption">ハンズオン教材などの練習制作物について、Notion(ドキュメントサービス)にまとめています。</p>
+                <img src="img/home/home_img08_practice.png" srcset="img/home/home_img08_practice.png 1x,
+                img/home/home_img08_practice@2x.png 2x" alt="リンク先のキャプチャ" class="p-worklink__img">
+                <div class="c-button p-works__link-mb">
+                    <a href="https://www.notion.so/PRACTICE-ac60de29e5a348b2b5ef8f7dfc036c83"
+                        class="c-button__inner">Link(Notion)</a>
+                </div>
+            </div>
+            <!-- Practiceここまで -->
+
+            <!-- Illustration -->
+            <h4 class="h4-works-heading c-heading p-worklink__sub-heading">Illustration</h4>
+            <div class="p-worklink">
+                <p class="p-worklink__caption">趣味のイラストについて、Notionにまとめています。</p>
+                <img src="img/home/home_img07_illust.png" srcset="img/home/home_img07_illust.png 1x,
+                img/home/home_img07_illust@2x.png 2x" alt="リンク先のキャプチャ" class="p-worklink__img">
+                <div class="c-button p-works__link-mb">
+                    <a href="https://www.notion.so/ILLUSTRATION-3e93ab8b50fe44f8ac2b4d95acd9a69f"
+                        class="c-button__inner">Link(Notion)</a>
+                </div>
+            </div>
+            <!-- Illustrationここまで -->
+
+        </section>
+        <!--========================================================
+        作品紹介ここまで
+        =========================================================-->
+
+
+        <!--========================================================
+        自己紹介
+        =========================================================-->
+        <article id="about">
+            <section class="p-about u-about__home-mb">
+                <div class="c-heading p-about__heading-positon">
+                    <h3 class="h3-heading c-heading__inner">About</h3>
+                    <p class="c-heading__subtitle">プロフィール</p>
+                </div>
+                <div class="p-about__inner">
+                    <div class="p-about__img-outer">
+                        <img src="img/about/about_img01_face.png" alt="イメージアイコン" class="p-about__img">
+                    </div>
+                    <div class="p-about__caption">
+                        <p class="p-about__caption-name">れんとん</p>
+                        <p class="p-about__caption-text">東京在住。公務員として地方自治体に長年勤務。</p>
+                        <p class="p-about__caption-text">何かを作り続ける・作る知識を探し続ける仕事がしたいと思い至り、独学でWeb制作を学ぶ。<br>
+                            視覚表現を通じて、様々な問題解決の力になることが目標。</p>
+                        <p class="p-about__caption-text">好きなこと：イラスト・サイクリング・映画鑑賞・部屋のレイアウトや作業環境を見ること</p>
+                    </div>
+                </div>
+                <div class="c-button p-about__link-positon">
+                    <a href="#" class="c-button__inner">Read more</a>
+                </div>
+            </section>
+        </article>
+        <!--========================================================
+        自己紹介ここまで
+        =========================================================-->
+
+
+        <!--========================================================
+        お問い合わせ
+        =========================================================-->
+        <section class="p-contact">
+            <div id="contact" class="c-heading p-contact__heading">
+                <h3 class="h3-heading c-heading__inner">Contact</h3>
+                <p class="c-heading__subtitle">おといあわせ</p>
+            </div>
+            <p class="p-contact__text">
+                ご質問など、お気軽にご連絡ください。<br>
+                ご連絡は、以下のフォームより入力をお願いいたします。<br>
+                1~2営業日中にご返信いたします。<br>
+            </p>
+            <div class="p-contact__form">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSc7sFhHWJoCye1POGtV1inUZqluPka7tozmOiBkFBPT_IaOMQ/viewform?embedded=true"
+                    width="100％" height="1150" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+            <!-- <div class="c-button p-contact__button">
+                <a href="#" class="c-button__inner">Link(Google form)</a>
+            </div> -->
+        </section>
+        <!--========================================================
+        お問い合わせここまで
+        =========================================================-->
+    </main>
+    <!--========================================================
+    メインここまで
+    =========================================================-->
+
+
+    <!--========================================================
+    フッター
+    =========================================================-->
+    <footer class="l-footer c-topofpage__footercolor">
+        <p id="page-top" class="js-hide-btn"><a href="#"> <span class="material-icons-outlined">arrow_upward</span>
+                Top of page</a></p>
+        <div class="l-footer__upper"></div>
+        <div id="footer" class="l-footer__inner">
+            <!-- フッター前半部分 -->
+            <div class="p-footer-first">
+                <!-- ロゴ -->
+                <div>
+                    <img src="img/common/common_img01_icon_top.svg" alt="ロゴ" class="p-footer__logo">
+                </div>
+                <!-- ロゴここまで -->
+                <!-- メニュー -->
+                <nav class="c-nav">
+                    <ul class="c-nav__list">
+                        <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                        <li class="c-nav__item"><a href="#works" class="c-nav__link">Works</a></li>
+                        <li class="c-nav__item"><a href="about.html" class="c-nav__link">About</a></li>
+                        <li class="c-nav__item"><a href="#contact" class="c-nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- メニューここまで -->
+            </div>
+            <!-- フッター前半部分ここまで -->
+
+            <!-- フッター後半部分 -->
+            <div class="p-footer-second">
+                <div class="p-footer-second__icon">
+                    <a href="https://twitter.com/renton_design" class="p-footer-second__img-outer">
+                        <img src="img/common/common_img02_icon_twitter.svg" alt="ツイッターリンク" class="p-footer-second__img">
+                    </a>
+                    <a href="https://renton-blog.com/" class="p-footer-second__img-outer">
+                        <img src="img/common/common_img03_icon_wordpress.svg" alt="ブログリンク" class="p-footer-second__img">
+                    </a>
+                </div>
+                <a href="about.html" id="page-top2" class="p-footer-second__back c-nav__link">
+                    <span class="material-icons-outlined">arrow_upward</span>
+                    Top of page</a>
+            </div>
+            <div class="p-footer-third">
+                <p>Copyright &copy; 2021 renton, All rights reserved</p>
+            </div>
+        </div>
+        <!-- フッター後半部分ここまで -->
+
+    </footer>
+    <!--========================================================
+    フッターここまで
+    =========================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

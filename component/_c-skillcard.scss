@@ -1,0 +1,27 @@
+.c-skillcard {
+    width: 330px;
+    height: 486px;
+    background-color: $color-section-bg;
+    padding: 0 30px 30px 30px;
+    border-radius: 15px;
+    position: relative;
+
+    &__icon {
+        position: absolute;
+        top: -15.43%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__img {
+        // object-fit: cover;
+        width: 170px;
+    }
+
+    &__heading {
+        padding-top: 115px;
+        padding-bottom: 20px;
+        text-align: center;
+        // transform: translateY(-50%);
+    }
+}

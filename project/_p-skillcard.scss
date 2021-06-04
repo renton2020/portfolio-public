@@ -1,0 +1,11 @@
+.p-skillcard {
+    width: 80.14%;
+    margin-right: auto;
+    margin-left: auto;
+    @include flex(around, 0, wrap);
+
+    &__skill {
+        margin-bottom: 175px;
+    }
+
+}

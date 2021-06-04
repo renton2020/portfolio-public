@@ -1,0 +1,104 @@
+.p-footer {
+    color: $color-header-footer-text;
+
+
+    &__logo {
+        width: 150px;
+
+        // margin-left: 30px;
+        @include responsive(md) {
+            width: 85px;
+        }
+    }
+
+    &__logolink {
+        &:hover {
+            opacity: 0.6;
+            transition: all 0.4s;
+        }
+    }
+
+    &-first {
+        @include flex(center, center);
+        padding-bottom: 50px;
+        border-bottom: solid 2px #FFF;
+
+        @include responsive(md) {
+            padding-bottom: 20px;
+        }
+
+        @include responsive(lg) {
+            @include flex(between, center);
+
+        }
+
+    }
+
+    &-second {
+        color: $color-header-footer-text;
+        padding-top: 50px;
+        text-align: center;
+
+        @include responsive(md) {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            @include flex(between, center, wrap);
+        }
+
+        &__icon {
+            @include flex(center, center);
+
+            @include responsive(md) {
+                @include flex(0, center);
+            }
+        }
+
+        &__img {
+            width: 75px;
+            height: 75px;
+            margin-right: 25px;
+            margin-left: 25px;
+
+            @include responsive(md) {
+                width: 30px;
+                height: 30px;
+                margin-right: 25px;
+                margin-left: 0;
+            }
+
+            &-outer {
+                &:hover {
+                    opacity: 0.6;
+                    transition: all 0.2s;
+                }
+            }
+        }
+
+        &__back {
+            display: inline-block;
+            font-size: rem(34px);
+            line-height: 1;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-right: 25px;
+
+            @include responsive(md) {
+                font-size: rem(20px);
+                margin-top: 0;
+                margin-bottom: 0px;
+                padding-right: 0px;
+
+            }
+        }
+
+    }
+
+    &-third {
+        color: $color-header-footer-text;
+        text-align: center;
+
+        @include responsive(md) {
+            text-align: left;
+        }
+    }
+}

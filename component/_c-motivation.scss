@@ -1,0 +1,11 @@
+.c-motivation {
+    margin-bottom: 80px;
+
+    &__heading {
+        padding-bottom: 30px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

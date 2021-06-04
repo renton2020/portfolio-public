@@ -1,0 +1,63 @@
+.p-contact {
+    background-color: $color-section-bg;
+    border-radius: 5px;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+    // margin-top: -9.33%;
+    // margin-bottom: -6.67%;
+
+    @include responsive(md) {
+        width: 81.94%;
+        // padding: -9.33% 0 -6.67% 0;
+    }
+
+    &__heading {
+        transform: translateY(-50.15%);
+    }
+
+    // &__button {
+    //     transform: translateY(48.15%);
+    // }
+
+    &__text {
+        margin-bottom: 50px;
+        padding-left: 12.73%;
+        padding-right: 12.73%;
+        text-align: center;
+
+        @include responsive(md) {
+            padding-left: 22.46%;
+            padding-right: 22.46%;
+        }
+    }
+
+    &__form {
+        // text-align: center;
+        position: relative;
+        width: 100%;
+        padding-top: 200%;
+
+        @include responsive(md) {
+            padding-top: 160%;
+        }
+
+        @include responsive(lg) {
+            padding-top: 130%;
+        }
+
+        @include responsive(xl) {
+            padding-top: 100%;
+        }
+
+
+        & iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}

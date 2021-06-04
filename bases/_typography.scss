@@ -1,0 +1,207 @@
+// ========================================================
+//文字列からワードを検索して置換する 後続のfont-face用
+//=========================================================
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+// ========================================================
+//文字列からワードを検索して置換するここまで
+//=========================================================
+
+
+// ========================================================
+//@font-faceの設定 Webフォントを簡単に扱えるように
+//書き方
+//@include font-face('Lora', 'fonts/Lora', 400, italic, ttf);
+//@include font-face('Samplinal', 'fonts/Samplinal', bold, normal, eot woff2 woff);
+//=========================================================
+@mixin font-face($family, $path, $weight: normal, $style: normal, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (eot: '?',
+            svg: '#'+ str-replace($family, ' ', '_'),
+        );
+
+    $formats: (otf: 'opentype',
+            ttf: 'truetype',
+        );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($family);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// ========================================================
+//@font-faceの設定ここまで
+//=========================================================
+
+
+// ========================================================
+//フォント変数・mixin
+//px→rem関数は_size.scssに記載
+//=========================================================
+$font-jp:'fot-tsukuardgothic-std',
+'Hiragino Kaku Gothic Pro',
+'Meiryo';
+$font-en:quicksand,
+'Helvetica Neue',
+'Arial',
+'sans-serif';
+
+/* hタグ以外のテキストを以下にmixinとして集約。変更があった際はここで行う。 */
+
+/* PCナビ */
+@mixin text-nav {
+    font-size: rem(24px);
+    letter-spacing: 0.1em;
+}
+
+/* 見出し */
+
+
+
+// ========================================================
+//フォント変数・mixinここまで
+//=========================================================
+
+
+
+// ========================================================
+//メインコード
+//=========================================================
+body {
+    background-color: #fff;
+    font-family: $font-en, $font-jp;
+    font-size: rem(14px);
+    color: $palette-text;
+    line-height: 2;
+    letter-spacing: 0.075em;
+    font-weight: 700;
+
+    @include responsive(lg) {
+        font-size: rem(16px);
+    }
+}
+
+/* hタグ */
+/* h1（タイトルアイコン）とh2（タイトルロゴ）は画像 */
+/* ========================================================
+home
+=========================================================*/
+.h3-heading {
+    font-size: rem(60px);
+    font-family: $font-en;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: $color-heading-text;
+}
+
+/* Works内見出し */
+.h4-works-heading {
+    font-size: rem(34px);
+    font-family: $font-en;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+/* スキル名・Works内作品タイトル*/
+.h5-name {
+    font-size: rem(20px);
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+}
+
+/* ========================================================
+about
+=========================================================*/
+.h2-about-title {
+    font-size: rem(60px);
+    font-family: $font-en;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: $color-heading-text;
+}
+
+.h3-about-date {
+    font-size: rem(20px);
+    letter-spacing: 0.1em;
+    line-height: 1;
+
+    @include responsive(md) {
+        font-size: rem(32px);
+    }
+}
+
+.h3-about-heading {
+    font-size: rem(28px);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+
+    @include responsive(md) {
+        line-height: 1;
+    }
+}
+
+/* ========================================================
+aboutここまで
+=========================================================*/
+
+/* ========================================================
+works-detail
+=========================================================*/
+
+.h2-detail-title {
+    font-size: rem(28px);
+    letter-spacing: 0.1em;
+    line-height: 1.57;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: $font-jp;
+
+    @include responsive(lg) {
+        font-style: rem(36px);
+    }
+}
+
+/* 解説内見出し */
+.h3-detail-heading {
+    font-size: rem(28px);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+
+    @include responsive(md) {
+        line-height: 1;
+    }
+}
+
+.h4-detail-heading-sub {
+    font-size: rem(20px);
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+}
+
+/* ========================================================
+works-detailここまで
+=========================================================*/
+
+
+// ========================================================
+//メインコードここまで 
+//=========================================================

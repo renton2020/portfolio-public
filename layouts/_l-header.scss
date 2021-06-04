@@ -1,0 +1,36 @@
+.l-header {
+    background-color: $color-header-bg;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &__inner {
+        max-width: 1280px;
+        padding-left: per(50px, 1280px);
+        padding-right: per(50px, 1280px);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* ========================================================
+マージンボトム
+=========================================================*/
+.l-header__mb-about {
+    margin-bottom: 70px;
+
+    @include responsive(lg) {
+        margin-bottom: 100px;
+    }
+}
+
+.l-header__mb-worksdetail {
+    margin-bottom: 60px;
+
+    @include responsive(lg) {
+        margin-bottom: 70px;
+    }
+}
+
+/* ========================================================
+マージンボトムここまで
+=========================================================*/
