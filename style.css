@@ -791,8 +791,8 @@ homeのMV,aboutの自己紹介欄,worksdetailの作品概要欄以下はこれ *
   font-size: 1.5rem;
   letter-spacing: 0.075em;
   text-decoration: none;
-  -webkit-transition: color 0.4s linear .2s;
-  transition: color 0.4s linear .2s;
+  -webkit-transition: color 0.3s linear .2s;
+  transition: color 0.3s linear .2s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -813,13 +813,12 @@ homeのMV,aboutの自己紹介欄,worksdetailの作品概要欄以下はこれ *
   left: 0%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: width 0.25s linear .2s;
-  transition: width 0.25s linear .2s;
+  -webkit-transition: width 0.25s linear .2s, background-color 0.4s linear .2s;
+  transition: width 0.25s linear .2s, background-color 0.4s linear .2s;
 }
 
 @media screen and (min-width: 1024px) {
   .c-button__inner::before {
-    color: #4D4B3A;
     width: 60px;
   }
 }
@@ -827,14 +826,42 @@ homeのMV,aboutの自己紹介欄,worksdetailの作品概要欄以下はこれ *
 @media screen and (min-width: 1024px) {
   .c-button__inner:hover {
     color: #FFF;
-    -webkit-transition: color 0.4s linear .2s;
-    transition: color 0.4s linear .2s;
   }
   .c-button__inner:hover::before {
     width: 100%;
-    -webkit-transition: width 0.25s linear .2s;
-    transition: width 0.25s linear .2s;
+    background-color: #96BA54;
   }
+}
+
+.c-button-worklink {
+  z-index: 1;
+  text-align: center;
+}
+
+.c-button-worklink__inner {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #95C4CB;
+  border-radius: 50px;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+@media screen and (min-width: 768px) {
+  .c-button-worklink__inner {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+  }
+}
+
+.c-button-worklink__inner:hover {
+  background-color: #96BA54;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
 .c-motivation {
@@ -1963,6 +1990,18 @@ homeのworks内illustration,practiceここまで
   margin-bottom: 150px;
 }
 
+.p-detail-worklink {
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-detail-worklink {
+    margin-bottom: 110px;
+    margin-top: 30px;
+  }
+}
+
 .p-detail-intro {
   background-color: #F8F8F8;
   width: 88%;
@@ -1970,6 +2009,7 @@ homeのworks内illustration,practiceここまで
   margin-right: auto;
   padding-left: 7.59494%;
   padding-right: 7.59494%;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -2020,10 +2060,6 @@ homeのworks内illustration,practiceここまで
   padding-bottom: 15px;
 }
 
-.p-detail-intro__no-link {
-  padding-top: 60px;
-}
-
 .p-detail-commentary {
   background-color: #F8F8F8;
   border-radius: 5px;
@@ -2044,6 +2080,20 @@ homeのworks内illustration,practiceここまで
   vertical-align: middle;
   font-family: 'Material Icons';
   content: '\e5d8';
+}
+
+.material-icons-round {
+  vertical-align: -3px;
+  font-family: 'Material Icons';
+  color: #FFF;
+  content: '\e5c8';
+}
+
+.material-icons-round2 {
+  vertical-align: -3px;
+  font-family: 'Material Icons';
+  color: #FFF;
+  content: '\e89e';
 }
 
 /* ========================================================

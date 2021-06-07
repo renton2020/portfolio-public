@@ -5,6 +5,7 @@
     margin-right: auto;
     padding-left: per(60px, 790px);
     padding-right: per(60px, 790px);
+    padding-top: 60px;
     padding-bottom: 60px;
 
     @include responsive(xl) {
@@ -54,9 +55,5 @@
         padding-top: 15px;
         padding-bottom: 15px;
 
-    }
-
-    &__no-link {
-        padding-top: 60px;
     }
 }

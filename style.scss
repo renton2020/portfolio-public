@@ -13,6 +13,7 @@
 // 共通
 @import "component/c-nav";
 @import "component/c-button";
+@import "component/c-button-worklink";
 // @import "component/c-scrolldown";
 @import "component/c-motivation";
 @import "component/c-heading";
@@ -60,7 +61,7 @@
 
 
 // 調整用
-@import "utility/material-icons-outlined";
+@import "utility/material-icons";
 @import "utility/u-about";
 @import "utility/u-banner-mv";
 @import "utility/u-logo-mv";

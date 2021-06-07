@@ -12,7 +12,7 @@
         font-size: rem(24px);
         letter-spacing: 0.075em;
         text-decoration: none;
-        transition: color 0.4s linear .2s;
+        transition: color 0.3s linear .2s;
 
         @include responsive(lg) {
             color: $color-body-text;
@@ -29,10 +29,10 @@
             top: 50%;
             left: 0%;
             transform: translateY(-50%);
-            transition: width 0.25s linear .2s;
+            transition: width 0.25s linear .2s, background-color 0.4s linear .2s;
 
             @include responsive(lg) {
-                color: $color-body-text;
+                // color: $color-body-text;
                 width: 60px;
 
             }
@@ -42,11 +42,12 @@
         @include responsive(lg) {
             &:hover {
                 color: $color-button-text-hover;
-                transition: color 0.4s linear .2s;
 
+                // transition: width 0.25s linear .2s, color 0.4s linear .2s, background-color 0.3s linear .2s;
                 &::before {
                     width: 100%;
-                    transition: width 0.25s linear .2s;
+                    background-color: $color-button-bg-hover;
+                    // transition: width 0.25s linear .2s, color 0.4s linear .2s, background-color 0.3s linear .2s;                }
                 }
             }
         }
